@@ -1,0 +1,368 @@
+{
+	"info": {
+		"_postman_id": "7f703c70-fa37-4a5b-96a9-8c6a95814a92",
+		"name": "Assignment BERR2243",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44024787",
+		"_collection_link": "https://aqilahsazali.postman.co/workspace/Aqilah-Sazali's-Workspace~1f1bd096-a84a-48bc-8191-cefa8abfd6f6/collection/44024787-7f703c70-fa37-4a5b-96a9-8c6a95814a92?action=share&source=collection_link&creator=44024787"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/customers/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Yiniyan\",\r\n    \"password\": \"RAHMAN\",\r\n    \"email\": \"B122310654@student.utem.edu.my\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/customers/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/customers/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Yiniyan\",\r\n    \"password\": \"RAHMAN\",\r\n    \"email\": \"B122310654@student.utem.edu.my\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/customers/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/admin/locations",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"location\": \"Dato Keramat\",\r\n    \"hours\": \"10am-5pm\",\r\n    \"availability\": \"Open\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/admin/locations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"locations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/admin/categories",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\": \"renew license\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/admin/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/queue/obtain",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": \"68134007b019373dcf6cb810\", \r\n    \"locationId\": \"68132e11c5287f69d92f5b7b\", \r\n    \"appointmentCategoryId\": \"68132e14c5287f69d92f5b7c\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/queue/obtain",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"queue",
+						"obtain"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/staff/queue/cancel/customer/681336daf3b5be2132fe5b10/68132e14c5287f69d92f5b7c",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/staff/queue/cancel/customer/681336daf3b5be2132fe5b10/68132e14c5287f69d92f5b7c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"staff",
+						"queue",
+						"cancel",
+						"customer",
+						"681336daf3b5be2132fe5b10",
+						"68132e14c5287f69d92f5b7c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/staff/queue/next/customer/68133e3af3b5be2132fe5b19",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/staff/queue/next/customer/68133e3af3b5be2132fe5b19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"staff",
+						"queue",
+						"next",
+						"customer",
+						"68133e3af3b5be2132fe5b19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/staff/location/68132e11c5287f69d92f5b7b",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"availability\": \"Close\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/staff/location/68132e11c5287f69d92f5b7b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"staff",
+						"location",
+						"68132e11c5287f69d92f5b7b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/admin/locations",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/admin/locations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"locations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/admin/customers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/admin/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/admin/customers/68134007b019373dcf6cb810",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/admin/customers/68134007b019373dcf6cb810",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"customers",
+						"68134007b019373dcf6cb810"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/admin/reports",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/admin/reports",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"reports"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
