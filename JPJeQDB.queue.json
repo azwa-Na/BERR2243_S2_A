@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "68480aed6d4fcd4f44a02e37"
+  },
+  "customerId": {
+    "$oid": "6847d5fe42449d33804ff9d4"
+  },
+  "location": "Dato Keramat",
+  "appointmentCategoryId": "renew IC",
+  "number": 1
+},
+{
+  "_id": {
+    "$oid": "68480b126d4fcd4f44a02e38"
+  },
+  "customerId": {
+    "$oid": "6847d82d42449d33804ff9d8"
+  },
+  "location": "Dato Keramat",
+  "appointmentCategoryId": "renew license",
+  "number": 1
+},
+{
+  "_id": {
+    "$oid": "68480b476d4fcd4f44a02e39"
+  },
+  "customerId": {
+    "$oid": "6847e55a19a96127c45ea40d"
+  },
+  "location": "Dato Keramat",
+  "appointmentCategoryId": "change vehicle's ownership",
+  "number": 1
+},
+{
+  "_id": {
+    "$oid": "68480b646d4fcd4f44a02e3a"
+  },
+  "customerId": {
+    "$oid": "6847e7ba19a96127c45ea410"
+  },
+  "location": "Dato Keramat",
+  "appointmentCategoryId": "pay JPJ summons",
+  "number": 1
+},
+{
+  "_id": {
+    "$oid": "68480c186d4fcd4f44a02e3b"
+  },
+  "customerId": {
+    "$oid": "6847fd6a0d826c4039babda4"
+  },
+  "location": "Dato Keramat",
+  "appointmentCategoryId": "create passport",
+  "number": 1
+}]

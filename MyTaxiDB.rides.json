@@ -1,0 +1,75 @@
+[{
+  "_id": {
+    "$oid": "6863caf810798f645934c846"
+  },
+  "customerId": {
+    "$oid": "6863b66a204c0b65a703632e"
+  },
+  "driverId": {
+    "$oid": "6863bde0204c0b65a703633e"
+  },
+  "PickupLocation": "Dato Keramat",
+  "Destination": "KLCC",
+  "Status": "Completed",
+  "Fare": "58.27"
+},
+{
+  "_id": {
+    "$oid": "6863cb9010798f645934c847"
+  },
+  "customerId": {
+    "$oid": "6863b6d6204c0b65a703632f"
+  },
+  "driverId": {
+    "$oid": "6863be40204c0b65a703633f"
+  },
+  "PickupLocation": "Dato Keramat",
+  "Destination": "Bukit Jalil",
+  "Status": "Completed",
+  "Fare": "12.86"
+},
+{
+  "_id": {
+    "$oid": "6863cbd010798f645934c848"
+  },
+  "customerId": {
+    "$oid": "6863b815204c0b65a7036330"
+  },
+  "driverId": {
+    "$oid": "6863bec2204c0b65a7036340"
+  },
+  "PickupLocation": "Dato Keramat",
+  "Destination": "Bukit Bintang",
+  "Status": "Completed",
+  "Fare": "48.55"
+},
+{
+  "_id": {
+    "$oid": "6863cc0710798f645934c849"
+  },
+  "customerId": {
+    "$oid": "6863b881204c0b65a7036331"
+  },
+  "driverId": {
+    "$oid": "6863bf44204c0b65a7036341"
+  },
+  "PickupLocation": "Dato Keramat",
+  "Destination": "Damansara",
+  "Status": "Completed",
+  "Fare": "40.95"
+},
+{
+  "_id": {
+    "$oid": "6863d32110798f645934c858"
+  },
+  "customerId": {
+    "$oid": "6863bb59204c0b65a7036338"
+  },
+  "driverId": {
+    "$oid": "6863bec2204c0b65a7036340"
+  },
+  "PickupLocation": "Dato Keramat",
+  "Destination": "Cheras",
+  "Status": "Completed",
+  "Fare": "14.28"
+}]

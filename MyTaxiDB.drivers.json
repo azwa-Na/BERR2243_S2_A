@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "685e659168a8846d5ce361d9"
+  },
+  "username": "Carl C",
+  "email": "carlsonchan@gmail.com",
+  "phone_no": "01934567892",
+  "car_model": "Honda City"
+},
+{
+  "_id": {
+    "$oid": "6863bde0204c0b65a703633e"
+  },
+  "username": "Arizona62",
+  "email": "arizonakiller@gmail.com",
+  "phone_no": "0102134471",
+  "car_model": "Perodua Kancil"
+},
+{
+  "_id": {
+    "$oid": "6863be40204c0b65a703633f"
+  },
+  "username": "Marquez93",
+  "email": "marcmarquez@gmail.com",
+  "phone_no": "0109244189",
+  "car_model": "Perodua X50"
+},
+{
+  "_id": {
+    "$oid": "6863bec2204c0b65a7036340"
+  },
+  "username": "LanNorris",
+  "email": "landolando@gmail.com",
+  "phone_no": "0191448171",
+  "car_model": "Mclaren"
+},
+{
+  "_id": {
+    "$oid": "6863bf44204c0b65a7036341"
+  },
+  "username": "Verstappen13",
+  "email": "maxmaxmax@gmail.com",
+  "phone_no": "0195527121",
+  "car_model": "Honda Crv"
+}]
