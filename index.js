@@ -1,3 +1,4 @@
+
 require('dotenv').config();
 
 const express = require('express');
@@ -10,7 +11,7 @@ app.use(express.json());
 
 let db;
 
-const JWT_SECRET = process.env.JWT_SECRET || 
+const JWT_SECRET = process.env.JWT_SECRET || 'your_default_jwt_secret_here'; 
 
 async function connectToMongoDB() {
     const uri = process.env.MONGO_URI || "mongodb://localhost:27017";
@@ -30,10 +31,15 @@ async function connectToMongoDB() {
     }
 }
 
-connectToMongoDB();
+connectToMongoDB(); 
 
+// Test route
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send("Hello World from MyTaxi backend!");
+});
+
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
 });
 
 // --- Middleware Functions for Authentication and Authorization ---
