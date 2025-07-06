@@ -1,37 +1,44 @@
 require('dotenv').config({ path: './mytaxi.env' });
+
 const express = require('express');
-const { MongoClient, ObjectId } = require('mongodb');
-const bcrypt = require('bcryptjs'); // For password hashing
-const jwt = require('jsonwebtoken'); // For JWT authentication
-const port = 3000;
+const { MongoClient } = require('mongodb');
 
 const app = express();
+const port = process.env.PORT || 3000;
+
 app.use(express.json());
 
 let db;
 
-// JWT Secret Key (VERY IMPORTANT: Use an environment variable in production)
-const JWT_SECRET = process.env.JWT_SECRET || 'your_super_secret_jwt_key_here_please_change_this_in_production';
+const JWT_SECRET = process.env.JWT_SECRET || 
 
 async function connectToMongoDB() {
-    const uri = "mongodb://localhost:27017";
-    const client = new MongoClient(uri);
+    const uri = process.env.MONGO_URI || "mongodb://localhost:27017";
+    const client = new MongoClient(uri, { useUnifiedTopology: true });
 
     try {
         await client.connect();
         console.log("Connected to MongoDB!");
-        db = client.db("MyTaxiDB"); 
+        db = client.db("MyTaxiDB");
 
-        // Ensure unique indexes for email for customers and drivers
         await db.collection('customers').createIndex({ email: 1 }, { unique: true });
         await db.collection('drivers').createIndex({ email: 1 }, { unique: true });
         console.log("Collections and indexes ensured.");
-
     } catch (err) {
         console.error("Failed to connect to MongoDB:", err);
+        process.exit(1);
     }
 }
+
 connectToMongoDB();
+
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`);
+});
 
 // --- Middleware Functions for Authentication and Authorization ---
 
