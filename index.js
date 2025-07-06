@@ -1,4 +1,4 @@
-require('dotenv').config({ path: './mytaxi.env' });
+require('dotenv').config();
 
 const express = require('express');
 const { MongoClient } = require('mongodb');
